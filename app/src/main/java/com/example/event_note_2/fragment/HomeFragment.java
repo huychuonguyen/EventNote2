@@ -184,6 +184,7 @@ public class HomeFragment extends Fragment {
                         // add item mới vào list
                         events.add(event);
                         adapter.submitList(events);
+                        adapter.notifyItemInserted(events.size() -1 );
                     }
                 },
                 AddUpdateEventDialogFragment.EventType.Add
